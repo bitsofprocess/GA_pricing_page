@@ -47,7 +47,7 @@
     height: 585px;
     top: 321px;
     left: 259px;
-    margin: 0 20%;
+    margin: 0px 475px;
 }
 
 .pricing-table .table {
@@ -141,7 +141,7 @@
     position: relative;
     border-radius: 5px;
     box-shadow: 0px 27px 32px;
-    margin: -550px 315px;
+    margin: -550px 300px;
     z-index: 1;
 }
 .popular-content {
@@ -168,5 +168,5 @@
     padding: 30px 30px;
     height: 500px;
     width: 250px;
-    margin: 27px 650px;
+    margin: 27px 620px;
 }
