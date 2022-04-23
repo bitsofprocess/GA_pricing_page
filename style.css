@@ -9,6 +9,10 @@
     --black-link-header: #001636;
     background-color: #E5E5E5;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 .navbar {
     width: 100%;
     height: 80px;
