@@ -1,0 +1,172 @@
+:root {
+    --light-gray-bg: #E5E5E5;
+    --navbar-blue: #001636;
+    --header-blue: #231D4f;
+    --purple-price-box: #5243C2;
+    --purple-button: #722F82;
+    --teal-button: #4BF0Bf;
+    --gray-button: #E5E8EB;
+    --black-link-header: #001636;
+    background-color: #E5E5E5;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    margin: 0px 0px;
+    background: #001636;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#logo {
+    margin: 20px 250px;
+}
+.pricing-table-container {
+    font-family: 'HelveticaNeue', sans-serif;
+    justify-content: center;
+    background: #E5E5E5;
+
+}
+.header {
+    text-align: center;
+    color: #231D4F;
+    justify-content: center;
+}
+.header h1 {
+    color: #231D4F;
+    font-size: 40px;
+    font-weight: 900;
+}
+.header h2 {
+    font-size: 20px;
+    top: 72px;
+    color: #848199;
+    margin-bottom: 100px; 
+}
+
+.pricing-table {
+    width: 925px;
+    height: 585px;
+    top: 321px;
+    left: 259px;
+    margin: 0 20%;
+}
+
+.pricing-table .table {
+    background: #fff;
+    position: relative;
+    border-radius: 26px;
+    padding: 30px 30px;
+    height: 500px; 
+}
+.price-container {
+    color: #848199;
+}
+.price {
+    width: 77px;
+    height: 46px;
+    font-size: 36px;
+    font-family: "Bowlby One";
+    color: #231D4f;
+}
+.per {
+    width: 73px;
+    height: 41px;
+    font-size: 17px;
+}
+.alternative {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.medium h3 {
+    color: #231D4F;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 33px;
+    margin-top: 10px;
+}
+.details {
+    width: 247px;
+    font-size: 15px;
+    color: #848199
+}
+.features ul {
+    color: #848199;
+    font-size: 15px;
+    list-style: none;
+    line-height: 18px;
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style-position: outside;
+}
+.features li {
+    height: 32px;
+    left: 15%;
+    right: 0%;
+    width: 245px;
+    line-height: 18px;
+    margin: 24px 0;
+    align-items: center;
+}
+.features li::before {
+    content: url('images/check-icon.svg');
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    padding: 0px 10px 20px 0px;
+    width: 21.35px;
+    height: 21.35px;
+}
+.features .white li::before {
+    content: url('images/white-check.svg');
+}
+.pricing-table a.btn {
+    background: var(--light-gray-bg);
+    color: #001636;
+    padding: 16px 30px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.popular-table .white {
+    color: #fff;
+}
+.popular-table {
+    background: #001636;
+    width: 311px;
+    height: 561px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 27px 32px;
+    margin: -550px 315px;
+    z-index: 1;
+}
+.popular-content {
+    color: #fff;
+    padding: 30px 15px;
+}
+.pricing-table a.popular-btn {
+    background: #4BF0BF;
+    color: #001636;
+    width: 240px;
+    height: 25px;
+    padding: 16px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.event-table {
+    background: #fff;
+    position: relative;
+    border-radius: 0 26px 26px 0px;
+    padding: 30px 30px;
+    height: 500px;
+    width: 250px;
+    margin: 27px 650px;
+}
