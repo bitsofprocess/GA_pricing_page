@@ -1,6 +1,14 @@
-body {
-    margin: 0%;
-    padding: 0%;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
 }
 .navbar {
     width: 100%;
@@ -15,12 +23,13 @@ body {
     font-family: 'HelveticaNeue', sans-serif;
     justify-content: center;
     background: #E5E5E5;
-    margin: 0px;
+    margin: 0px 0px;
 }
 .header {
     text-align: center;
     color: #231D4F;
     justify-content: center;
+    padding-top: 30px
 }
 .header h1 {
     color: #231D4F;
@@ -169,5 +178,5 @@ body {
     padding: 30px 30px;
     height: 500px;
     width: 250px;
-    margin: 27px 620px;
+    margin: 53px 620px;
 }
