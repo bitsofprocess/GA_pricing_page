@@ -1,17 +1,6 @@
-:root {
-    --light-gray-bg: #E5E5E5;
-    --navbar-blue: #001636;
-    --header-blue: #231D4f;
-    --purple-price-box: #5243C2;
-    --purple-button: #722F82;
-    --teal-button: #4BF0Bf;
-    --gray-button: #E5E8EB;
-    --black-link-header: #001636;
-    background-color: #E5E5E5;
-}
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 .navbar {
     width: 100%;
@@ -20,13 +9,13 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #logo {
-    margin: 20px 250px;
+     
 }
 .pricing-table-container {
     font-family: 'HelveticaNeue', sans-serif;
     justify-content: center;
     background: #E5E5E5;
-
+    margin: 0px;
 }
 .header {
     text-align: center;
@@ -50,7 +39,7 @@ body {
     height: 585px;
     top: 321px;
     left: 259px;
-    margin: 0px 475px;
+    margin: 0px auto;
 }
 
 .pricing-table .table {
@@ -122,7 +111,7 @@ body {
     content: url('images/white-check.svg');
 }
 .pricing-table a.btn {
-    background: var(--light-gray-bg);
+    background: #E5E5E5;
     color: #001636;
     padding: 16px 30px;
     display: inline-block;
