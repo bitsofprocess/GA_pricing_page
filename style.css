@@ -83,8 +83,10 @@ dd {
     font-weight: 900;
     line-height: 33px;
     margin-top: 10px;
+    font-weight: 900;
 }
 .details {
+    margin-top: 15px;
     width: 247px;
     font-size: 15px;
     color: #848199
@@ -178,5 +180,5 @@ dd {
     padding: 30px 30px;
     height: 500px;
     width: 250px;
-    margin: 53px 620px;
+    margin: 39px 620px;
 }
