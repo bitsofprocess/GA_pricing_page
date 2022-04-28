@@ -187,3 +187,6 @@ dd {
     width: 250px;
     margin: 39px 620px;
 }
+.event-table .content {
+    margin-top: 14px;
+}
