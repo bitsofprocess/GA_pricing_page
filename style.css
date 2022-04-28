@@ -114,13 +114,13 @@ dd {
     display: flex;
 }
 .features li::before {
-    content: url('images/check-icon.svg');
+    content: url('images/gray-dark-check.svg');
     padding: 0px 10px;
     width: 21.35px;
     height: 21.35px;
 }
 .features .white li::before {
-    content: url('images/white-check.svg');
+    content: url('images/white-check-darkbg.svg');
 }
 .pricing-table a.btn {
     background: #E5E5E5;
@@ -139,7 +139,9 @@ dd {
     color: #fff;
 }
 .popular-table {
-    background: #001636;
+    /* background: #001636; */
+    background-image: url("./images/image.png");
+    background-size: cover;
     width: 311px;
     height: 561px;
     position: relative;

@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://js.chargebee.com/v2/chargebee.js"></script>
+    </head>
+    <body>
+        <h3>Checkout Drop-in</h3>
+        <button href="javascript:void(0)" onclick="openCheckout()">
+          Subscribe
+        </button>
+    </body>
+    <script>
+        var cbInstance, cart;
+
+        window.addEventListener('DOMContentLoaded', function() {
+        cbInstance = Chargebee.init({
+            site: "gameapart-test",
+            isItemsModel: true,
+        })
+
+        cbInstance.setCheckoutCallbacks(function(cart) {
+            return {
+                success: function(hpid) {
+                    console.log('success', hpid)
+                }
+            }
+        })
+
+        cart = cbInstance.getCart()
+        })
+        function openCheckout() {
+            const planPriceId = 'Platform-Only-USD-Monthly' // Plan price point ID is used to identify the product 
+            const planPriceQuantity = 10
+            const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+            cart.replaceProduct(product);
+            
+            // Adding an addon
+            //product.addAddon({ 
+            //  id: "silver-pass-USD-monthly",  // Addon price point ID
+            //  quantity: 2 
+            //})
+    
+            // Adding a coupon
+            //product.addCoupon("fourty")
+    
+            // Dynamically changing Plan quantity using setPlanQuantity
+            //product.setPlanQuantity(planPriceQuantity);
+      
+            // Removing Addons using removeAddon
+            //product.removeAddon("silver-pass-USD-monthly"); // Addon price point ID
+            
+            // Passing values for custom fields
+            product.setCustomData({cf_team_code: "GMPT", cf_team_size: 10});
+    
+            // Set up cart info
+            cart.setCustomer({email: "james@gameapart.com", first_name: "James", last_name: "Simmons", company: "GameApart", billing_address:{first_name: "James", last_name: "Simmons", company: "GameApart", email: "james@gameapart.com"}});
+
+
+            cbInstance.setCheckoutCallbacks(function(cart) {
+       
+                // You can get the plan name for which the checkout happened like below
+                 var product = cart.products[0];
+                console.log(product.planId);
+                console.log(product.addons);
+                return {
+                    loaded: function() {
+                    console.log("checkout opened");
+                    },
+                    close: function() {
+                        console.log("checkout closed");
+                    },
+                    success: function(hostedPageId) {
+                    console.log("success! page id:", hostedPageId);
+                    // Hosted page id will be unique token for the checkout that happened
+                    // You can pass this hosted page id to your backend 
+                    // and then call our retrieve hosted page api to get subscription details
+                    // https://apidocs.chargebee.com/docs/api/hosted_pages#retrieve_a_hosted_page
+                    },
+                    step: function(value) {
+                        // value -> which step in checkout
+                        console.log(value);
+                    }
+                }
+            });
+            // Opening the checkout
+            cart.proceedToCheckout();
+        }
+    </script>
+</html>
