@@ -193,3 +193,41 @@ body {
 .event-table .content {
     margin-top: 14px;
 }
+
+hr {
+    display: block;
+    border-top: 2px solid rgba(0, 22, 54, 0.25);
+    margin: 3% 27%;
+    margin-bottom: 1%;
+}
+.footer-nav {
+    margin-left: 26%;
+    margin-right: 40%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    position: relative;
+    display: flex;
+}
+.link-list {
+    margin-top: 0%;
+    padding-left: 0px;
+    
+}
+.footer-nav ul {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 5em;
+}
+.footer-nav h4 {
+    color: #231D4F;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: 900;
+}
+.footer-nav li {
+    margin: 1em;
+    color: #3D464D;
+}
